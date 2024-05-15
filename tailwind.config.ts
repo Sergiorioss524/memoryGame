@@ -5,6 +5,8 @@ export default {
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
+      transform: ["hover", "focus"],
+      transformStyle: ['responsive'],
       fontFamily: {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
       },
