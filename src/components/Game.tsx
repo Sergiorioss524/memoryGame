@@ -115,15 +115,15 @@ const Game: React.FC = () => {
 
     return (
         <div className="flex flex-col items-center">
-            <div className="mb-4 text-2xl mt-7">Timer: {timer} seconds</div>
+            <div className="mb-4 text-2xl">Timer: {timer} seconds</div>
             <div className="mb-4 text-2xl">Matches: {matchCount}</div>
             <button
                 onClick={initializeGame}
-                className="mb-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-900 transition duration-300 mt-2"
+                className="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-300"
             >
                 Restart
             </button>
-            <div className="flex flex-wrap justify-center">
+            <div className="grid grid-cols-4 gap-4">
                 {cards.map(card => (
                     <FlipCard
                         key={card.id}
